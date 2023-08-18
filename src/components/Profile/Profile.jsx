@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { ImUsers } from 'react-icons/im';
 import { ImEye } from 'react-icons/im';
-import {ImHeart} from 'react-icons/im';
+import { ImHeart } from 'react-icons/im';
 import css from './Profile.module.css';
 
 export const Profile = ({
@@ -46,13 +46,15 @@ export const Profile = ({
 };
 
 Profile.propTypes = {
-  avatar: PropTypes.string.isRequired,
-  username: PropTypes.string.isRequired,
-  tag: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
-  stats: PropTypes.objectOf({
+  user: PropTypes.shape({
+    avatar: PropTypes.string.isRequired,
+    username: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    stats: PropTypes.objectOf({
       followers: PropTypes.number.isRequired,
       views: PropTypes.number.isRequired,
       likes: PropTypes.number.isRequired,
-  })
+    }).isRequired,
+  }).isRequired,
 };

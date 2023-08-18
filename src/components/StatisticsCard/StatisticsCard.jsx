@@ -11,6 +11,8 @@ export const StatisticsCard = ({ item: { label, percentage } }) => {
 };
 
 StatisticsCard.propTypes = {
-  label: PropTypes.string.isRequired,
-  percentage: PropTypes.number.isRequired,
+  item: PropTypes.shape({
+    label: PropTypes.string.isRequired,
+    percentage: PropTypes.number.isRequired,
+  }).isRequired
 };
