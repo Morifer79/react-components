@@ -1,4 +1,7 @@
 import PropTypes from 'prop-types';
+import { ImUsers } from 'react-icons/im';
+import { ImEye } from 'react-icons/im';
+import { ImHeart } from 'react-icons/im';
 
 export const Profile = ({
   user: {
@@ -19,16 +22,22 @@ export const Profile = ({
       </div>
       <ul className="stats">
         <li>
-          <span className="label">Followers</span>
-          <span className="quantity">{followers}</span>
+          <span className="label">
+            <ImUsers />
+          </span>
+          <span className="quantity"> {followers}</span>
         </li>
         <li>
-          <span className="label">Views</span>
-          <span className="quantity">{views}</span>
+          <span className="label">
+            <ImEye />
+          </span>
+          <span className="quantity"> {views}</span>
         </li>
         <li>
-          <span className="label">Likes</span>
-          <span className="quantity">{likes}</span>
+          <span className="label">
+            <ImHeart />
+          </span>
+          <span className="quantity"> {likes}</span>
         </li>
       </ul>
     </div>
