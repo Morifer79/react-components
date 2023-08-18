@@ -1,21 +1,24 @@
 import PropTypes from 'prop-types';
 import { StatisticsCard } from 'components/StatisticsCard/StatisticsCard';
-import css from './Statistics.module.css';
+import { StatisticsSection } from './StatisticsSection.styled';
+import { StatisticsTitle } from './StatisticsTitle.styled';
+import { StatisticsList } from './StatisticsList.styled';
+import { StatisticsListItem } from './StatisticsListItem.styled';
 
 export const Statistics = ({ title, stats }) => {
   return (
-    <section className={css.statistics}>
-      {title && '<h2 className={css.title}>Upload stats</h2>'}
-      <ul className={css.statList}>
+    <StatisticsSection>
+      {title && <StatisticsTitle>title</StatisticsTitle>}
+      <StatisticsList>
         {stats.map(stat => {
           return (
-            <li className={css.item} key={stat.id}>
+            <StatisticsListItem key={stat.id}>
               <StatisticsCard item={stat} />
-            </li>
+            </StatisticsListItem>
           );
         })}
-      </ul>
-    </section>
+      </StatisticsList>
+    </StatisticsSection>
   );
 };
 

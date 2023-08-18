@@ -2,7 +2,16 @@ import PropTypes from 'prop-types';
 import { ImUsers } from 'react-icons/im';
 import { ImEye } from 'react-icons/im';
 import { ImHeart } from 'react-icons/im';
-import css from './Profile.module.css';
+import { UserProfile } from './UserProfile.styled';
+import { UserDescription } from './UserDescription.styled';
+import { UserAvatar } from './UserAvatar.styled';
+import { UserName } from './UserName.styled';
+import { UserTag } from './UserTag.styled';
+import { UserLocation } from './UserLocation.styled';
+import { UserStatsList } from './UserStatsList.styled';
+import { UserStatsListItem } from './UserStatsListItem.styled';
+import { UserLabel } from 'components/FriendList/UserLabel.styled';
+import { UserQuantity } from './UserQuantity.styled';
 
 export const Profile = ({
   user: {
@@ -14,34 +23,34 @@ export const Profile = ({
   },
 }) => {
   return (
-    <div className={css.profile}>
-      <div className={css.description}>
-        <img src={avatar} alt="User avatar" className={css.avatar} />
-        <p className={css.name}>{username}</p>
-        <p className={css.tag}>@{tag}</p>
-        <p className={css.location}>{location}</p>
-      </div>
-      <ul className={css.stats}>
-        <li className={css.item}>
-          <span className={css.label}>
-            <ImUsers className={css.img} />
-          </span>
-          <span className={css.quantity}> {followers}</span>
-        </li>
-        <li className={css.item}>
-          <span className={css.label}>
-            <ImEye className={css.img} />
-          </span>
-          <span className={css.quantity}> {views}</span>
-        </li>
-        <li className={css.item}>
-          <span className={css.label}>
-            <ImHeart className={css.img} />
-          </span>
-          <span className={css.quantity}> {likes}</span>
-        </li>
-      </ul>
-    </div>
+    <UserProfile>
+      <UserDescription>
+        <UserAvatar src={avatar} alt="User avatar" />
+        <UserName>{username}</UserName>
+        <UserTag>@{tag}</UserTag>
+        <UserLocation>{location}</UserLocation>
+      </UserDescription>
+      <UserStatsList>
+        <UserStatsListItem>
+          <UserLabel>
+            <ImUsers width={30} height={30} />
+          </UserLabel>
+          <UserQuantity> {followers}</UserQuantity>
+        </UserStatsListItem>
+        <UserStatsListItem>
+          <UserLabel>
+            <ImEye width={30} height={30} />
+          </UserLabel>
+          <UserQuantity> {views}</UserQuantity>
+        </UserStatsListItem>
+        <UserStatsListItem>
+          <UserLabel>
+            <ImHeart width={30} height={30} />
+          </UserLabel>
+          <UserQuantity> {likes}</UserQuantity>
+        </UserStatsListItem>
+      </UserStatsList>
+    </UserProfile>
   );
 };
 

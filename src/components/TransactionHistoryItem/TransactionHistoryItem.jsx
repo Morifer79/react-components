@@ -1,14 +1,14 @@
 import PropTypes from 'prop-types';
-import css from './TransactionHistoryItem.module.css';
+import { TableData } from './TableData.styled';
 
 export const TransactionHistoryItem = ({
   operation: { type, amount, currency },
 }) => {
   return (
     <>
-      <td className={css.tdata}>{type}</td>
-      <td className={css.tdata}>{amount}</td>
-      <td className={css.tdata}>{currency}</td>
+      <TableData>{type}</TableData>
+      <TableData>{amount}</TableData>
+      <TableData>{currency}</TableData>
     </>
   );
 };
@@ -18,5 +18,5 @@ TransactionHistoryItem.propTypes = {
     type: PropTypes.string.isRequired,
     amount: PropTypes.string.isRequired,
     currency: PropTypes.string.isRequired,
-  }).isRequired
+  }).isRequired,
 };
