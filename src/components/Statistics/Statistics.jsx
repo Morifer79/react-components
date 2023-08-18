@@ -1,14 +1,15 @@
 import PropTypes from 'prop-types';
-import { StatisticsCard } from 'components/StatisticsCard/StatisticsCard';
+import {StatisticsCard} from 'components/StatisticsCard/StatisticsCard';
+import css from './Statistics.module.css';
 
 export const Statistics = ({ title, stats }) => {
   return (
-    <section className="statistics">
-      {title && '<h2 className="title">Upload stats</h2>'}
-      <ul className="stat-list">
+    <section className={css.statistics}>
+      {title && '<h2 className={css.title}>{Upload stats}</h2>'}
+      <ul className={css.statList}>
         {stats.map(stat => {
           return (
-            <li className="item" key={stat.id}>
+            <li className={css.item} key={stat.id}>
               <StatisticsCard item={stat} />
             </li>
           );
@@ -19,7 +20,7 @@ export const Statistics = ({ title, stats }) => {
 };
 
 Statistics.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,

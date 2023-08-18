@@ -1,5 +1,5 @@
 //import styled from "@emotion/styled";
 
-//export const Card = styled.div`
-
+//export const Description = styled.div`
+//	display: flex;
 //`;

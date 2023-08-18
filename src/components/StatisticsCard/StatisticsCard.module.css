@@ -1,0 +1,12 @@
+.label{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding-bottom: 8px;
+	font-size: 20px;
+}
+
+.percentage{
+	font-size: 25px;
+	font-weight: 700;
+}

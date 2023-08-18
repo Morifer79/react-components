@@ -12,10 +12,10 @@ import dataTransactions from '../Data/transactions.json';
 export const App = () => {
 	return (
 		<Container>
-		<Profile user={dataUser} />
-		<Statistics stats={dataStatistics} />
-		<FriendList friends={dataFriend} />
-		<TransactionHistory items={dataTransactions} />
+			<Profile user={dataUser} />
+			<Statistics stats={dataStatistics} />
+			<FriendList friends={dataFriend} />
+			<TransactionHistory items={dataTransactions} />
 		</Container>
 	);
 };

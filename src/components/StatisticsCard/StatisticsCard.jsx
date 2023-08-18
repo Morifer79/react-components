@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
+import css from './StatisticsCard.module.css';
 
 export const StatisticsCard = ({ item: { label, percentage } }) => {
   return (
     <>
-      <span className="label">{label}</span>
-      <span className="percentage">{percentage}</span>
+      <span className={css.label}>{label}</span>
+      <span className={css.percentage}>{percentage}%</span>
     </>
   );
 };
