@@ -8,7 +8,7 @@ import { StatisticsListItem } from './StatisticsListItem.styled';
 export const Statistics = ({ title, stats }) => {
   return (
     <StatisticsSection>
-      {title && <StatisticsTitle>title</StatisticsTitle>}
+      {title && <StatisticsTitle>{title}</StatisticsTitle>}
       <StatisticsList>
         {stats.map(stat => {
           return (

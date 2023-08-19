@@ -14,10 +14,10 @@ export const StatisticsListItem = styled.li`
   text-shadow: 2px 0 2px #8c1b21, 0 2px 2px #8c1b21, -2px 0 2px #8c1b21,
     0 -2px 2px #8c1b21;
   cursor: pointer;
-  background: ${props => getRandomHexColor()};
+  background: ${getRandomHexColor()};
 
   :hover {
-    background: ${props => getRandomHexColor()};
+    background: ${getRandomHexColor()};
   }
 
   :first-of-type {
