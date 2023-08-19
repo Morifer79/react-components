@@ -1,12 +1,14 @@
 import styled from '@emotion/styled';
-import { getRandomHexColor } from 'components/Statistics/StatisticsListItem.styled';
 
 export const UserStatsListItem = styled.li`
-  padding: 20px 26px;
+  padding: 18px 26px;
+
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  transition: color 300ms linear, background 300ms linear;
+
   :hover {
-		color: white;
-    background: ${props => getRandomHexColor()};
+    color: #fff;
+    background: #000;
   }
 `;

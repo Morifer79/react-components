@@ -9,8 +9,10 @@ export const UserAvatar = styled.img`
   border-radius: 50%;
   margin-bottom: 15px;
   cursor: pointer;
-  background: ${props => getRandomHexColor()};
+  background: ${getRandomHexColor()};
+	transition: transform 250ms, background 300ms linear;
   :hover {
     background: ${props => getRandomHexColor()};
+    transform: scale(1.3);
   }
 `;

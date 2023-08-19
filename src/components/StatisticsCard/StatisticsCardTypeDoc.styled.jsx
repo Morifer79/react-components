@@ -1,9 +1,10 @@
 import styled from '@emotion/styled';
 
 export const StatisticsCardTypeDoc = styled.span`
+  padding-bottom: 8px;
+
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 8px;
   font-size: 20px;
 `;

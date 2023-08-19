@@ -33,19 +33,19 @@ export const Profile = ({
       <UserStatsList>
         <UserStatsListItem>
           <UserLabel>
-            <ImUsers width={30} height={30} />
+            <ImUsers size={30} />
           </UserLabel>
           <UserQuantity> {followers}</UserQuantity>
         </UserStatsListItem>
         <UserStatsListItem>
           <UserLabel>
-            <ImEye width={30} height={30} />
+            <ImEye size={30} />
           </UserLabel>
           <UserQuantity> {views}</UserQuantity>
         </UserStatsListItem>
         <UserStatsListItem>
           <UserLabel>
-            <ImHeart width={30} height={30} />
+            <ImHeart size={30} />
           </UserLabel>
           <UserQuantity> {likes}</UserQuantity>
         </UserStatsListItem>
