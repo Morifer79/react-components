@@ -14,11 +14,11 @@ export const StatisticsListItem = styled.li`
   text-shadow: 2px 0 2px #8c1b21, 0 2px 2px #8c1b21, -2px 0 2px #8c1b21,
     0 -2px 2px #8c1b21;
   cursor: pointer;
-  background: ${getRandomHexColor()};
-	transition: background 300ms linear;
+  background: ${props => getRandomHexColor()};
+  transition: background 300ms linear;
 
   :hover {
-    background: ${getRandomHexColor()};
+    background: ${props => getRandomHexColor()};
   }
 
   :first-of-type {
