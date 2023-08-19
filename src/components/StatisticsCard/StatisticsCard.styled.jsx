@@ -1,5 +1,10 @@
 import styled from '@emotion/styled';
 
+export const StatisticsCardPercentage = styled.span`
+  font-size: 25px;
+  font-weight: 700;
+`;
+
 export const StatisticsCardTypeDoc = styled.span`
   padding-bottom: 8px;
 

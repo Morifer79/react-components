@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
-import { StatisticsCardTypeDoc } from './StatisticsCardTypeDoc.styled';
-import { StatisticsCardPercentage } from './StatisticsCardPercentage.styled';
+import {
+  StatisticsCardTypeDoc,
+  StatisticsCardPercentage,
+} from './StatisticsCard.styled';
 
 export const StatisticsCard = ({ item: { label, percentage } }) => {
   return (

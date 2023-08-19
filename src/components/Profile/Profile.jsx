@@ -1,17 +1,17 @@
 import PropTypes from 'prop-types';
-import { ImUsers } from 'react-icons/im';
-import { ImEye } from 'react-icons/im';
-import { ImHeart } from 'react-icons/im';
-import { UserProfile } from './UserProfile.styled';
-import { UserDescription } from './UserDescription.styled';
-import { UserAvatar } from './UserAvatar.styled';
-import { UserName } from './UserName.styled';
-import { UserTag } from './UserTag.styled';
-import { UserLocation } from './UserLocation.styled';
-import { UserStatsList } from './UserStatsList.styled';
-import { UserStatsListItem } from './UserStatsListItem.styled';
-import { UserLabel } from 'components/FriendList/UserLabel.styled';
-import { UserQuantity } from './UserQuantity.styled';
+import { ImUsers, ImEye, ImHeart } from 'react-icons/im';
+import {
+  UserProfile,
+  UserDescription,
+  UserAvatar,
+  UserName,
+  UserTag,
+  UserLocation,
+  UserStatsList,
+  UserStatsListItem,
+  UserQuantity,
+  UserLabel,
+} from './Profile.styled';
 
 export const Profile = ({
   user: {
