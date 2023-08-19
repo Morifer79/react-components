@@ -15,6 +15,7 @@ export const StatisticsListItem = styled.li`
     0 -2px 2px #8c1b21;
   cursor: pointer;
   background: ${getRandomHexColor()};
+	transition: background 300ms linear;
 
   :hover {
     background: ${getRandomHexColor()};
